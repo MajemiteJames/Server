@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.svg">
+    <title>Frontender</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <img src="./images/logo.svg" alt="Logo" class="logo" srcset="">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="./images/ham.svg" alt="toggle-menu" class="menu" id="menu" srcset="">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="./images/exit.svg" alt="exist menu" srcset=""></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#"> Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="./images/server.svg" class="server" alt="server graphic" srcset="">
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead">Go serverless and pay ony for what you use.</p>
+            <img src="./images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop" srcset="">
+        </section>
+
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="./images/icon-1.svg" alt="Calender icon" srcset="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at non cumque illum quia, sapiente iste assumenda velit dignissimos quaerat quod id ab omnis.</p>
+                </li>
+                <li>
+                    <img src="./images/icon-2.svg" alt="Calender icon" srcset="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at non cumque illum quia, sapiente iste assumenda velit dignissimos quaerat quod id ab omnis.</p>
+                </li>
+                <li>
+                    <img src="./images/icon-3.svg" alt="Calender icon" srcset="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, at non cumque illum quia, sapiente iste assumenda velit dignissimos quaerat quod id ab omnis.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="./images/user1.png" alt="testimonial" srcset="">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime cumque recusandae nisi fugiat a quibusdam vel enim non odit optio,</blockquote>
+                        <figcaption>- Jane Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./images/user2.png" alt="testimonial" srcset="">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maxime cumque recusandae nisi fugiat a quibusdam vel enim non odit optio,</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2>Start your free trial now!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/logo-white.svg" class="logo" alt="logo" srcset="">
+                </a>
+                    <p class="address">Diamond Court, Block 1, Flat 1,<br/> Life Camp Extension,<br/> Abuja.</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        let menu = document.getElementById('menu');
+        let nav = document.getElementById('nav');
+        let exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
